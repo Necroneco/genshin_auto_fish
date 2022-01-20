@@ -104,7 +104,7 @@ class FishFind:
         # return false if fish_list is empty
         if not self.fish_list:
             return False
-        
+
         if self.fish_list[0]!=self.last_fish_type:
             self.select_food(self.fish_list[0])
             self.last_fish_type = self.fish_list[0]
@@ -119,7 +119,7 @@ class Fishing:
         self.t_n = cv2.imread('./imgs/target_now.png')
         self.im_bar = cv2.imread('./imgs/bar2.png')
         self.bite = cv2.imread('./imgs/bite.png', cv2.IMREAD_GRAYSCALE)
-        self.std_color=np.array([192,255,255])
+        self.std_color=np.array([255,255,190])
         self.r_ring=21
         self.delay=delay
         self.max_step=max_step
